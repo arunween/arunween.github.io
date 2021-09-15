@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html>
 	
-	<img src="https://64.media.tumblr.com/96d601a0610b609a1ea8eb12ad5b6a16/d701c879be30d9fc-05/s1280x1920/83fdf43b17df75b3685dd98a1e99791592aba923.jpg" alt="alternatetext">
-	<img src="https://64.media.tumblr.com/d0b9f3d8adbf94396db76c8e35d9c023/a932683caf397fd4-b5/s1280x1920/fe4d0938bb440452506c820e11a87da193e69e4c.jpg" alt="alternatetext">
+<head>
+<title>Test</title>
+<script type="text/javascript">
+  var imageURLs = [
+       "https://64.media.tumblr.com/96d601a0610b609a1ea8eb12ad5b6a16/d701c879be30d9fc-05/s1280x1920/83fdf43b17df75b3685dd98a1e99791592aba923.jpg"
+     , "https://64.media.tumblr.com/d0b9f3d8adbf94396db76c8e35d9c023/a932683caf397fd4-b5/s1280x1920/fe4d0938bb440452506c820e11a87da193e69e4c.jpg"
+     , "https://64.media.tumblr.com/cf40ec3a6b89efe4643eb6438e1cb675/86b0d4d4d2a01f50-7f/s1280x1920/5c90c38b31a6d9e38765cddb1154a77d2f595367.jpg"
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>';
+    return img;
+  }
+</script>
+</head>
+<body>
+<script type="text/javascript">
+  document.write(getImageTag());
+</script>
+</body>
 	
 </html>
